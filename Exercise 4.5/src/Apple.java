@@ -29,11 +29,11 @@ public class Apple extends Fruit implements calcPrice {
 		
 		else{
 			double pr = 2.50;
-			double qq = this.weight;
+			double w = this.weight;
 			discount = 0.3;
 			totalPrice(pr,qq);
 			System.out.printf("Buy \t\t: %.2fkg",this.weight);
-			System.out.printf("\nTotal price \t: RM%.2f",totalPrice(pr,qq));
+			System.out.printf("\nTotal price \t: RM%.2f",totalPrice(pr,w));
 		}
 	}
 	public double totalPrice() {//overloading method
@@ -44,8 +44,8 @@ public class Apple extends Fruit implements calcPrice {
 		return pr*this.weight*(1-discount);
 	}
 	
-	public double totalPrice(double pr,double qq) {//overloading method
-		return pr*qq*(1-discount);
+	public double totalPrice(double pr,double w) {//overloading method
+		return pr*w*(1-discount);
 	}  
 	public double weight() {
 		return weight;
