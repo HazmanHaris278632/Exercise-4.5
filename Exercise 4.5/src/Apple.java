@@ -2,7 +2,7 @@
 public class Apple extends Fruit implements calcPrice {
 	
 	private String colour;
-	protected double price, weight, discount, totalDiscount;
+	protected double price, weight, discount;
 	
 	
 	public Apple(String name, String colour, double weight, double price) {//subclass
